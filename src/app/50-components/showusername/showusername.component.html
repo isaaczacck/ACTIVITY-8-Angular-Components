@@ -1,0 +1,6 @@
+<label for="username">Enter your username:</label>
+<input type="text" id="username" [(ngModel)]="username" name="username" required>
+
+<button (click)="showUsername()">Display Username</button>
+
+<p *ngIf="username">Username: {{ username }}</p>
