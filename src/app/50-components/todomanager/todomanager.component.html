@@ -1,0 +1,10 @@
+<label for="task">Enter task:</label>
+<input type="text" id="task" [(ngModel)]="task" name="task" required>
+
+<button (click)="addTask()">Add Task</button>
+
+<ul *ngIf="tasks.length">
+  <li *ngFor="let task of tasks; let i = index"><br><br>
+    {{ task }} <button (click)="removeTask(i)">Remove</button>
+  </li>
+</ul>
