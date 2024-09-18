@@ -1,0 +1,6 @@
+<label for="guess">Enter your guess (1-100):</label>
+<input type="number" id="guess" [(ngModel)]="guess" name="guess" required>
+
+<button (click)="checkGuess()">Check Guess</button>
+
+<p *ngIf="result">{{ result }}</p>
