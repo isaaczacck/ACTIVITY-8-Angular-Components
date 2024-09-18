@@ -1,0 +1,8 @@
+<label for="year">Enter year:</label>
+<input type="number" id="year" [(ngModel)]="year" name="year" required>
+
+<button (click)="checkLeapYear()">Check Leap Year</button>
+
+<p *ngIf="isLeapYear !== null">
+  {{ year }} is {{ isLeapYear ? 'a leap year' : 'not a leap year' }}.
+</p>

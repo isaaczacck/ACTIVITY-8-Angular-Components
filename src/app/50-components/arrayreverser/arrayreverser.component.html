@@ -1,0 +1,8 @@
+<label for="arrayInput">Enter array items (comma-separated):</label>
+<input type="text" id="arrayInput" [(ngModel)]="arrayInput" name="arrayInput" required>
+
+<button (click)="reverseArray()">Reverse Array</button>
+
+<ul *ngIf="reversedArray.length">
+  <li *ngFor="let item of reversedArray">{{ item }}</li>
+</ul>

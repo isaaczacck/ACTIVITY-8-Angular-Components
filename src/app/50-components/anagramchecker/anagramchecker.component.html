@@ -1,0 +1,11 @@
+<label for="word1">Enter first word:</label>
+<input type="text" id="word1" [(ngModel)]="word1" name="word1" required>
+
+<label for="word2">Enter second word:</label>
+<input type="text" id="word2" [(ngModel)]="word2" name="word2" required>
+
+<button (click)="checkAnagram()">Check Anagram</button>
+
+<p *ngIf="isAnagram !== null">
+  "{{ word1 }}" and "{{ word2 }}" are {{ isAnagram ? 'anagrams' : 'not anagrams' }}.
+</p>
