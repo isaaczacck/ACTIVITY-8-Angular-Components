@@ -1,0 +1,10 @@
+<label for="item">Enter item:</label>
+<input type="text" id="item" [(ngModel)]="item" name="item" required>
+
+<button (click)="addItem()">Add Item</button>
+
+<ul *ngIf="items.length">
+  <li *ngFor="let item of items; let i = index">
+    {{ item }} <button (click)="removeItem(i)">Remove</button>
+  </li>
+</ul>
