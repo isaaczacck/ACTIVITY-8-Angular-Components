@@ -1,0 +1,8 @@
+<label for="username">Enter username:</label>
+<input type="text" id="username" [(ngModel)]="username" name="username" required>
+
+<button (click)="validateUsername()">Validate</button>
+
+<p *ngIf="isValid !== null">
+  Username "{{ username }}" is {{ isValid ? 'valid' : 'invalid' }}.
+</p>
