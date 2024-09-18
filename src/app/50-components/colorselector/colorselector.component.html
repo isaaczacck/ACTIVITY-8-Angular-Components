@@ -1,0 +1,6 @@
+<p>Select a color:</p>
+<ul>
+  <li *ngFor="let color of colors" (click)="selectColor(color)">{{ color }}</li>
+</ul>
+
+<p *ngIf="selectedColor">Selected Color: {{ selectedColor }}</p>
