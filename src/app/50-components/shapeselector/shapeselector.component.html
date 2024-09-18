@@ -1,0 +1,6 @@
+<p>Select a shape:</p>
+<ul>
+  <li *ngFor="let shape of shapes" (click)="selectShape(shape)">{{ shape }}</li>
+</ul>
+
+<p *ngIf="selectedShape">Selected Shape: {{ selectedShape }}</p>
