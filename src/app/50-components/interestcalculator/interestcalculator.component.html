@@ -1,0 +1,12 @@
+<label for="principal">Enter principal:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="number" id="principal" [(ngModel)]="principal" name="principal" required>
+<br><br><br>
+<label for="rate">Enter rate (%):</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="number" id="rate" [(ngModel)]="rate" name="rate" required>
+<br><br><br>
+<label for="time">Enter time (years):</label>
+<input type="number" id="time" [(ngModel)]="time" name="time" required>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button (click)="calculateInterest()">Calculate Interest</button>
+
+<p *ngIf="interest !== null">Simple Interest: {{ interest }}</p>
