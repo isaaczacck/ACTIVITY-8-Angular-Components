@@ -1,0 +1,6 @@
+<label for="word">Enter a word:</label>
+<input type="text" id="word" [(ngModel)]="word" name="word" required>
+
+<button (click)="checkPalindrome()">Check Palindrome</button>
+
+<p *ngIf="isPalindrome !== null">The word is {{ isPalindrome ? 'a' : 'not a' }} palindrome.</p>
