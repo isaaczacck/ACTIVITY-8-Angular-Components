@@ -1,0 +1,8 @@
+<!-- Input for user's name -->
+<input [(ngModel)]="userName" placeholder="Enter your name">
+
+<!-- Button to trigger the displayUserName method -->
+<button (click)="displayUserName()">Display Name</button>
+
+<!-- Display the user's name if available -->
+<p *ngIf="displayName">Hello, {{ displayName }}!</p>
