@@ -1,0 +1,6 @@
+<label for="text">Enter text:</label>
+<input type="text" id="text" [(ngModel)]="text" name="text" required>
+
+<button (click)="countWords()">Count Words</button>
+
+<p *ngIf="wordCount !== 0">Number of words: {{ wordCount }}</p>
