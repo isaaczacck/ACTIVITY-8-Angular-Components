@@ -1,0 +1,6 @@
+<label for="fahrenheit">Enter temperature in Fahrenheit:</label>
+<input type="number" id="fahrenheit" [(ngModel)]="fahrenheit" name="fahrenheit" required>
+
+<button (click)="convertToCelsius()">Convert to Celsius</button>
+
+<p *ngIf="celsius !== null">Temperature in Celsius: {{ celsius }}</p>
