@@ -1,0 +1,5 @@
+<button (click)="showDate()">Show Current Date and Time</button>
+
+<!-- Display the current date and time if it's available -->
+<p *ngIf="currentDate !== null">
+    Current Date and Time: {{ currentDate | date:'full' }}</p>

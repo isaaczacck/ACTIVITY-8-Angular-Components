@@ -1,0 +1,7 @@
+<label for="word">Enter a word:</label>
+<input type="text" id="word" [(ngModel)]="word" name="word" required>
+
+<button (click)="reverseWord()">Reverse Word</button>
+
+<!-- Display the reversed word if it's calculated -->
+<p *ngIf="reversedWord !== null">Reversed Word: {{ reversedWord }}</p>
