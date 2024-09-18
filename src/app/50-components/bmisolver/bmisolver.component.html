@@ -1,0 +1,9 @@
+<label for="height">Enter height (cm):</label>
+<input type="number" id="height" [(ngModel)]="height" name="height" required>
+<br><br><br>
+<label for="weight">Enter weight (kg):</label>
+<input type="number" id="weight" [(ngModel)]="weight" name="weight" required>
+<br><br>
+<button (click)="calculateBMI()">Calculate BMI</button>
+
+<p *ngIf="bmi !== null">BMI: {{ bmi | number:'1.1-1' }}</p>
