@@ -1,0 +1,6 @@
+<label for="text">Enter text:</label>
+<input type="text" id="text" [(ngModel)]="text" name="text" required>
+
+<button (click)="countCharacters()">Count Characters</button>
+
+<p *ngIf="characterCount !== 0">Number of characters: {{ characterCount }}</p>
