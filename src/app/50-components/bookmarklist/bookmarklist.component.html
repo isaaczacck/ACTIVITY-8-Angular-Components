@@ -1,0 +1,10 @@
+<label for="url">Enter URL:</label>
+<input type="text" id="url" [(ngModel)]="url" name="url" required>
+
+<button (click)="addBookmark()">Add Bookmark</button>
+
+<ul *ngIf="bookmarks.length">
+  <li *ngFor="let bookmark of bookmarks">
+    <a [href]="bookmark" target="_blank">{{ bookmark }}</a>
+  </li>
+</ul>
