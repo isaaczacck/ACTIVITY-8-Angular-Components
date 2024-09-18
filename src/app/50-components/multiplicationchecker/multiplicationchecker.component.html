@@ -1,0 +1,11 @@
+<label for="number1">Enter first number:</label>
+<input type="number" id="number1" [(ngModel)]="number1" name="number1" required>
+<br><br><br>
+<label for="number2">Enter second number:</label>
+<input type="number" id="number2" [(ngModel)]="number2" name="number2" required> <br><br>
+
+<button (click)="checkMultiplication()">Check</button>
+
+<p *ngIf="isMultiple !== null">
+  The first number is {{ isMultiple ? 'a' : 'not a' }} multiple of the second number.
+</p>
