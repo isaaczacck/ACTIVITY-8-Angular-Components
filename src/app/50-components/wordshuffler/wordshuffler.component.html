@@ -1,0 +1,6 @@
+<label for="word">Enter a word:</label>
+<input type="text" id="word" [(ngModel)]="word" name="word" required>
+
+<button (click)="shuffleWord()">Shuffle Word</button>
+
+<p *ngIf="shuffledWord">Shuffled Word: {{ shuffledWord }}</p>
