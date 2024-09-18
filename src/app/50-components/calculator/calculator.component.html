@@ -1,0 +1,17 @@
+<label for="num1">Number 1:</label>
+<input type="number" id="num1" [(ngModel)]="num1" name="num1" required>
+<br>
+<br>
+<label for="num2">Number 2:</label>
+<input type="number" id="num2" [(ngModel)]="num2" name="num2" required> 
+
+<div>
+    <br>
+  <button (click)="operation = 'add'; calculate()">Add</button>&nbsp;&nbsp;&nbsp;
+  <button (click)="operation = 'subtract'; calculate()">Subtract</button>&nbsp;&nbsp;&nbsp;
+  <button (click)="operation = 'multiply'; calculate()">Multiply</button>&nbsp;&nbsp;&nbsp;
+  <button (click)="operation = 'divide'; calculate()">Divide</button>
+</div>
+
+<!-- Display the result -->
+<p *ngIf="result !== null">Result: {{ result }}</p>
