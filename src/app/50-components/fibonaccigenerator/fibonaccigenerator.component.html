@@ -1,0 +1,8 @@
+<label for="count">Enter number of terms:</label>
+<input type="number" id="count" [(ngModel)]="count" name="count" required>
+
+<button (click)="generateFibonacci()">Generate Fibonacci Series</button>
+
+<ul *ngIf="fibonacciSeries.length">
+  <li *ngFor="let number of fibonacciSeries">{{ number }}</li>
+</ul>
