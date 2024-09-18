@@ -1,0 +1,13 @@
+<label for="amount">Enter amount:</label>
+<input type="number" id="amount" [(ngModel)]="amount" name="amount" required>
+<br><br><br>
+<label for="currency">Select currency:</label>&nbsp;&nbsp;&nbsp;
+<select id="currency" [(ngModel)]="currency" name="currency">
+  <option value="USD">Dollar</option>
+  <option value="PHP">Php</option>
+  <option value="EUR">Euro</option>
+</select>&nbsp;&nbsp;&nbsp;
+
+<button (click)="formatCurrency()">Format Currency</button>
+
+<p *ngIf="formattedAmount">Formatted Amount: {{ formattedAmount }}</p>
